@@ -1,18 +1,8 @@
-## Getting Started
+# Programação Modular
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+_Template_ para realização da Atividade Pontuada em Laboratório 1. Crie seu _fork_ deste repositório e faça o clone dele em seu computador do laboratório.
 
-## Folder Structure
+## Instruções da atividade
 
-The workspace contains two folders by default, where:
+Siga as instruções do professor para iniciar a atividade. Realize as tarefas do enunciado no seu clone no computador. Envie suas respostas conforme as instruções do professor. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
