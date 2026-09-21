@@ -71,8 +71,18 @@ public class Equipe {
      * @return Total de vitórias da equipe.
      */
     private int totalVitorias(){
-        //TODO;
-        return 0;
+
+        int vitorias = 0;
+
+        for(PartidaDeVolei partida : partidas){
+
+            if(partida.vencedorDoJogo().contains(nome)){
+                vitorias++;
+            }
+
+        }
+
+        return vitorias;
     }
 
     /**
@@ -102,8 +112,25 @@ public class Equipe {
      * @return Aproveitamento em sets da equipe (vencidos/perdidos), podendo ser Double.MAX_VALUE em caso de 0 sets perdidos.
      */
     public double aproveitamentoSets(){
-        //TODO 
-        return 0;
+        
+
+        double resposta = Double.MAX_VALUE;
+        int setsPerdidos = 0;
+        int setsVencidos = 0;
+
+        for(PartidaDeVolei partida : partidas){
+
+            setsPerdidos += (partida.setsDisputados() - partida.setsVencidosEquipe(nome));
+            setsVencidos += (partida.setsDisputados() - setsPerdidos);
+
+        }
+
+        if(setsPerdidos != 0){
+                resposta = (double)setsVencidos/setsPerdidos;
+            }
+
+
+        return resposta;
     }
 
     /**
